@@ -1,0 +1,254 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 3rem 2rem;
+}
+
+.navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar-logo img {
+    width: 150px;
+}
+
+.navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 4rem;
+}
+
+.navbar-links li {
+    margin: 0 1.7rem;
+    cursor: pointer;
+}
+
+.header_poppins {
+   font-weight: 500;
+}
+ 
+.navbar-links li:hover {
+    color: var(--color-orange);
+}
+
+.navbar-logingroup {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-logingroup button {
+    padding: 9px 20px;
+    font: var(--font-base);
+    background-color: transparent;
+    font-weight: bold;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.navbar-login {
+    border: none;
+}
+
+.navbar-signin {
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.navbar-loggedin {
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 0.7rem 2rem;
+    font: var(--font-base);
+    cursor: pointer;
+}
+
+.navbar-hamburgermenu {
+    display: none;
+}
+
+.navbar-hamburgermenu_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-orange);
+    transition: 0.5s ease;
+
+    flex-direction: column;
+    z-index: 5;
+}
+
+.navbar-hamburgermenu_overlay .overlay__close {
+    font-size: 27px;
+    color: var(--color-darkblue);
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+.navbar__hamburgermenu-links {
+    list-style: none;
+}
+
+.navbar__hamburgermenu-links li {
+    margin: 2rem;
+    cursor: pointer;
+    color: var(--color-blacky);
+    text-align: center;
+    font-family: var(--font-base);
+}
+
+.navbar__hamburgermenu-links li:hover {
+    color: var(--color-grayish);
+}
+
+
+
+
+
+.select-menu{
+    font-family: 'Poppins';
+    position: relative;
+}
+.select-menu .select-btn{
+    display: flex;
+    background: #fff;
+    padding: 8px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.select-btn img{
+    font-size: 25px;
+    transition: 0.3s;
+}
+.select-menu.activeNavbar .select-btn img{
+    transform: rotate(-180deg);
+}
+.select-menu .options{
+    /* position: relative;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: none; */
+    position: absolute;
+    width: 100%;
+    top: calc(100% + 10px); /* Altındaki öğelerin açılır menünün altından 10 piksel mesafede olmasını sağlar */
+    left: 0;
+    z-index: 1; 
+    padding: 15px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+.select-menu.activeNavbar .options{
+    display: block;
+}
+.options .option{
+    display: flex;
+    cursor: pointer;
+    padding: 11px 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #ffffff;
+}
+.options .option:hover{
+    background: #F2F2F2;
+}
+
+.option {
+    font-size: 18px;
+    color: #333;
+}
+
+.select-menu .activeNavbar {
+    background-color: #fff;
+}
+
+.propsusername {
+    color: var(--color-orange);
+}
+
+/* ul {
+    list-style: none;
+}
+
+.profile {
+    display: inline-block;
+    position: relative;
+    font: var(--font-base);
+
+}
+
+.profile span {
+    display: block;
+    padding: 20px 20px;
+}
+
+.dropdown  {
+    display: block;
+    width: 10%;
+    background: #fff;
+    position: absolute;
+    z-index: 99;
+    display: none;
+    top: calc(8% + 10px);
+}
+.dropdown li {
+    display: block;
+    cursor: pointer;
+}
+.dropdown:hover {
+    display: block;
+    cursor: pointer;
+}
+
+.navbar-loggedin:hover + .dropdown {
+    display: block;
+} */
+
+
+
+
+@media screen and (max-width: 2000px) {
+    .navbar-logo img {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-hamburgermenu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar-logingroup {
+        display: none;
+    }
+
+    .navbar-logo img {
+        width: 110px;
+    }
+}

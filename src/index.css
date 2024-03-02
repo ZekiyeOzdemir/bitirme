@@ -1,0 +1,64 @@
+/*@import url(font)*/
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+  
+    --font-base: 'Poppins', serif; 
+    --font-alt:  'Volkhov', serif;
+    
+  --color-white: #ffff;
+  --color-orange: #f1a501;
+  --color-red: #df6951;
+  --color-pinky: linear-gradient(#ff946d, #ff7d68);
+  --color-gray: #efeef3;
+  --color-purple_gradient: linear-gradient(#747def, #5e3be1);
+  --color-purple: #473bf0;
+  --color-black: #080809;
+  --color-darkblue: #181e4b;
+  --color-blacky: #212832;
+  --color-grayish: #5e6282;
+  --color-navyblue: #000842;
+  --color-saxblue: #0c21c1;
+  --color-lightgray: rgba(57, 66, 93, 0.06);
+  --color-darkestblue: rgba(20, 24, 62, 1);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier (0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-bottom 0.5s cubic-bezier (0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}

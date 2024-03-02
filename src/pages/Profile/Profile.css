@@ -1,0 +1,25 @@
+.profile {
+    background-color: rgb(242, 244, 252);
+    height: 100vh;
+
+}
+
+.profile__header {
+    background-color: #1E2875;
+    height: 200px;
+    position: absolute;
+    left: 320px;
+    right: 0;
+    top: 155px;
+    border-radius: 12px;
+    z-index: 0;
+}
+
+.profile__header-span {
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    padding: 1.5rem 1.5rem;
+}

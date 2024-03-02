@@ -1,0 +1,143 @@
+.registercomp {
+    flex: 0.9;
+    /* background-color: bisque; */
+    padding: 12rem 8rem;
+    width: 100%;
+    position: relative;
+}
+
+.registercomp__wrapper {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+}
+
+.registercomp__h2 {
+    color: #000000;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 30px;
+    flex: 0.8;
+    font-weight: 500;
+}
+
+.registercomp__h3 {
+    color: #000000;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    flex: 0.1;
+}
+
+.registercomp__h3-second {
+    color: #000000;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.registercomp__span {
+    color: #0C21C1;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.registercomp__form {
+    padding-top: 2rem;
+}
+
+.input__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.registercomp__email,
+.registercomp__password,
+.registercomp__username {
+    position: relative;
+}
+
+.registercomp__password,
+.registercomp__username {
+    margin-top: 2.5rem;
+}
+
+.registercomp__input{
+    width: 100%;
+    border: none;
+    height: 30px;
+    border-bottom: 2px solid #999999;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+
+.registercomp__input:focus {
+    outline: none;
+    border-bottom: 2px solid #000842;
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+
+.registercomp__input::placeholder{
+    text-align: start;    
+    color: #000842;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.registercomp__email img,
+.registercomp__password img,
+.registercomp__username img {
+    position: absolute;
+    bottom: 6px;
+    right: 0;
+}
+
+.registercomp__label {
+    color: #999999;
+    font-family: 'Poppins';
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.registercomp__form a {
+    font-family: 'Poppins';
+    font-size: 12px;
+    color: #4D4D4D;
+    font-weight: 400;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+}
+
+.registercomp__button {
+    padding: 1rem 15rem;
+    border: none;
+    margin: 2rem 0;
+    background-color: #0C21C1;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.registercomp__button:disabled {
+    background-color: #000842;
+    cursor: not-allowed;
+}
+
+
+
+
+
+

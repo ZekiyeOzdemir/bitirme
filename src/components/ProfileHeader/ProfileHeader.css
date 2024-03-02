@@ -1,0 +1,90 @@
+.profileheader {
+    width: 100%;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 2px solid rgba(206, 206, 206, 1);
+    background-color: #fff;
+}
+
+.profileheader_selectmenu{
+    font-family: 'Poppins';
+    position: relative;
+}
+
+.profileheader_selectmenu .profile__header-selectbtn{
+    display: flex;
+    background: #fff;
+    padding: 8px 15px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.profile__header-selectbtn img{
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.profileheader_selectmenu.activeProfileHeader .profile__header-selectbtn img{
+    transform: rotate(-180deg);
+}
+
+.profile__header-sBtntext {
+    font-family: 'Poppins';
+    color: var(--color-blacky);
+    word-spacing: 0.7rem;
+
+}
+
+.profileheader_selectmenu .profileheader__options{
+    /* position: relative;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: none; */
+    position: absolute;
+    width: 100%;
+    top: calc(100% + 10px); /* Altındaki öğelerin açılır menünün altından 10 piksel mesafede olmasını sağlar */
+    left: 0;
+    z-index: 1; 
+    padding: 15px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+.profileheader_selectmenu.activeProfileHeader .profileheader__options{
+    display: block;
+}
+.profileheader__options .optionn{
+    display: flex;
+    cursor: pointer;
+    padding: 11px 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #ffffff;
+}
+.profileheader__options .optionn:hover{
+    background: #F2F2F2;
+}
+
+.optionn {
+    font-size: 18px;
+    color: #333;
+}
+
+.profileheader_selectmenu .activeProfileHeader {
+    background-color: #fff;
+}
+
+.propsusername {
+    color: var(--color-orange);
+}

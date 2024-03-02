@@ -1,0 +1,547 @@
+.analiz {
+    position: relative;
+    padding-bottom: 14rem;
+}
+
+.analiz__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4rem;
+}
+
+.section__padding-analiz {
+    padding: 4rem 6rem;
+    padding-bottom: 8rem;
+}
+
+.analiz__header {
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.analiz__h2 {
+    font-family: 'Volkhov';
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 1rem;
+    color: var(--color-darkestblue);
+    letter-spacing: 0.04rem;
+}
+
+.analiz__layout {
+    width: 65%;
+    height: 700px;
+    background-color: rgba(223, 215, 249, 0.438);
+    border-radius: 20px;
+    border-top-left-radius: 90px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+.analiz__layout h2 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--color-grayish);
+    letter-spacing: 0.03rem;
+    margin-top: 1rem;
+}
+
+.analiz__layout-type,
+.analiz__layout-audience,
+.analiz__layout-gender,
+.analiz__layout-file,
+.analiz__layout-aitext{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 0.3rem;
+    /* width: 100%; do not try ahagsdhagdah*/
+}
+
+.analiz__layout-button button {
+    padding: 16px 44px;
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(#ff946d, #ff7d68);
+    color: var(--color-white);
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.analiz__layout-type__input {
+    border: none;
+    width: 320px;
+    height: 50px;
+    border-radius: 7px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.analiz__layout-aitext__textarea {
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 400;
+    width: 320px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.analiz__layout-aitext__textarea::placeholder {
+    text-align: left;    
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    padding-left: 0.7rem;
+}
+
+.analiz__layout-aitext__textarea:focus {
+    outline: none;
+    font-size: 18px;
+    font-family: 'Poppins';
+}
+
+.analiz__layout-type__input::placeholder {
+    text-align: left;    
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    padding-left: 0.7rem;
+}
+
+.analiz__layout-type__input:focus {
+    outline: none;
+    font-size: 18px;
+    font-family: 'Poppins';
+}
+
+.analiz__layout-label {
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 400;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.analiz__layout-filelabel {
+    background-color: var(--color-white);
+    padding: 14px 60px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    letter-spacing: 0.04rem;
+    border-radius: 9px;
+    user-select: none;
+    cursor: pointer;
+    /* box-shadow: 5px 15px 25px rgba(173, 152, 173, 0.719); */
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    position: relative;
+    font-size: 17px;
+}
+
+.analiz__layout-file img {
+    width: 30px;
+    position: absolute;
+    left: 7px;
+    top: 17px;
+}
+
+/* .gender__checkbox { */
+input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: 1s ease;
+}
+
+input[type="checkbox"]:hover{
+    background-color: #9c9fb6cc;
+}
+
+input[type="checkbox"]:after{
+    content: '\2713';
+    font-weight: bolder;
+    font-size: 16px;
+    position: absolute;
+    left: 3px;
+    bottom: 0.3px;
+    /* color: var(--color-blacky); */
+    color: white;
+    display: none;
+}
+
+input[type="checkbox"]:checked{
+    background-color: #181e4b;
+}
+
+input[type="checkbox"]:checked:after{
+    display: block;
+}
+
+.checkbox__container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    column-gap: 3rem;
+}
+
+.checkbox__container-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    justify-content: flex-start;
+}
+
+ .analiz__layout-audience,
+.analiz__layout-gender {
+    width: 300px;
+} 
+
+
+
+
+
+
+
+.analiz__layout-toplines {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.analiz__layout-bottomlines {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.analiz__layout-circle {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(#747def, #5e3be1);
+    border-radius: 50px;
+    position: relative;
+    position: absolute;
+    top: -20px;
+    right: -17px;
+}
+
+.analiz__searchicon {
+    position: absolute;
+    width: 35px;
+    top: 12px;
+    left: 10px;
+}
+
+.analiz__topvector {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width: 2000px) {
+    
+}
+
+@media screen and (max-width: 1000px) {
+     .analiz__header {
+        padding-bottom: 2.7rem;
+    }
+    
+    .analiz__h2 {
+        font-size: 38px;
+        margin-bottom: 1rem;
+    }
+
+    .analiz_p {
+        font-size: 17px;
+    }
+
+    .analiz__topvector {
+        width: 550px;
+    }
+
+    .analiz__layout {
+        width: 100%;
+        height: 690px;
+    }
+
+    .section__padding-analiz {
+        padding: 3rem 2rem;
+        padding-bottom: 6rem;
+
+    }
+
+    .analiz__wrapper {
+        row-gap: 3rem;
+    }
+
+    .analiz__layout-toplines {
+        width: 210px;
+    }
+
+    .analiz__layout-bottomlines {
+        width: 300px;
+    }
+
+    .analiz__layout-type,
+.analiz__layout-audience,
+.analiz__layout-gender,
+.analiz__layout-file,
+.analiz__layout-aitext{
+    row-gap: 0.5rem;
+}
+
+ .analiz__layout-button button {
+    padding: 16px 47px;
+    font-size: 16px;
+}
+
+.analiz__layout-type__input {
+    width: 310px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.analiz__layout-aitext__textarea {
+    font-size: 16px;
+    width: 310px;
+    height: 74px;
+}
+
+.analiz__layout-aitext__textarea::placeholder {
+    font-size: 16px;
+    padding-left: 0.5rem;
+}
+
+.analiz__layout-aitext__textarea:focus {
+    font-size: 16px;
+}
+
+.analiz__layout-type__input::placeholder {
+    font-size: 16px;
+    padding-left: 0.5rem;
+}
+
+.analiz__layout-type__input:focus {
+    font-size: 16px;
+}
+
+.analiz__layout-label {
+    font-size: 16px;
+}
+
+
+.analiz__layout-filelabel {
+    padding: 14px 55px;
+    font-size: 16px;
+}
+
+.analiz__layout-file img {
+    width: 30px;
+    left: 9px;
+    top: 14px;
+}
+
+input[type="checkbox"]{
+    height: 20px;
+    width: 20px;
+}
+
+input[type="checkbox"]:after{
+    font-size: 16px;
+}
+
+.checkbox__container {
+    column-gap: 2.3rem;
+}
+
+
+.analiz__layout-audience,
+.analiz__layout-gender {
+    width: 290px;
+}   
+
+.analiz__layout-circle {
+    width: 60px;
+    height: 60px;
+    top: -15px;
+    right: -18px;
+}
+
+.analiz__searchicon {
+    width: 35px;
+    top: 12px;
+    left: 10px;
+}  
+}
+
+@media screen and (max-width: 600px) {
+    .analiz__header {
+        padding-bottom: 2rem;
+    }
+    
+    .analiz__h2 {
+        font-size: 28px;
+        margin-bottom: 0.8rem;
+    }
+
+    .analiz_p {
+        font-size: 15px;
+    }
+
+    .analiz__topvector {
+        width: 350px;
+    }
+
+    .analiz__layout {
+        width: 95%;
+        height: 600px;
+
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .section__padding-analiz {
+        padding: 2rem 2rem;
+    }
+
+    .analiz__wrapper {
+        row-gap: 2.7rem;
+    }
+
+    .analiz__layout-toplines {
+        width: 200px;
+    }
+    
+    .analiz__layout-bottomlines {
+        width: 270px;
+    }
+
+    .analiz__layout-type,
+.analiz__layout-audience,
+.analiz__layout-gender,
+.analiz__layout-file,
+.analiz__layout-aitext{
+    row-gap: 0.2rem;
+}
+
+ .analiz__layout-button button {
+    padding: 11px 35px;
+    font-size: 16px;
+}
+
+.analiz__layout-type__input {
+    width: 250px;
+    height: 40px;
+    font-size: 14px;
+}
+
+.analiz__layout-aitext__textarea {
+    font-size: 14px;
+    width: 250px;
+    height: 54px;
+}
+
+.analiz__layout-aitext__textarea::placeholder {
+    font-size: 15px;
+    padding-left: 0.4rem;
+}
+
+.analiz__layout-aitext__textarea:focus {
+    font-size: 14px;
+}
+
+.analiz__layout-type__input::placeholder {
+    font-size: 14px;
+    padding-left: 0.4rem;
+}
+
+.analiz__layout-type__input:focus {
+    font-size: 14px;
+}
+
+.analiz__layout-label {
+    font-size: 14px;
+}
+
+
+.analiz__layout-filelabel {
+    padding: 10px 40px;
+    font-size: 14px;
+}
+
+.analiz__layout-file img {
+    width: 25px;
+    left: 7px;
+    top: 11px;
+}
+
+input[type="checkbox"]{
+    height: 17px;
+    width: 17px;
+}
+
+input[type="checkbox"]:after{
+    font-size: 15px;
+}
+
+.checkbox__container {
+    /* justify-content: flex-start; */
+    column-gap: 1.4rem;
+}
+
+
+.analiz__layout-audience,
+.analiz__layout-gender {
+    width: 230px;
+}   
+
+.analiz__layout-circle {
+    width: 50px;
+    height: 50px;
+    top: -10px;
+    right: -15px;
+}
+
+.analiz__searchicon {
+    width: 28px;
+    top: 12px;
+    left: 10px;
+}
+}
