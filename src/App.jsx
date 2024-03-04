@@ -35,11 +35,12 @@ function App() {
 
    const userToken = localStorage.getItem('token');
    var userName = ''
+   var userId = '';
    if(userToken) {
     const user = jwtDecode(userToken);
     console.log(user);
     userName = user.sub;
-    const userId = user.userId;
+    userId = user.userId;
     const userEmail = user.email;
    }
 
@@ -49,7 +50,7 @@ function App() {
       <img src={decore} className='decore' />
        <Navbar username={userName}/> 
       <Header />
-      <About />
+      <About userId={userId}/>
       <Analiz />
       <Explore />
       <Footer />
