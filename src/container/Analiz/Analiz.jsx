@@ -6,16 +6,18 @@ import analizbottomlines from '../../assets/Group422.png';
 import searchicon from '../../assets/analizsearchicon.png';
 import file from '../../assets/analizfile.png';
 import Dropdown from '../../components/Dropdown/Dropdown';
+import  axios  from 'axios';
 
 function Analiz(props) {
     const [selectedFile, setSelectedFile] = useState(null);
-    const userId = props.userId;
+    const userIdentifier = props.userId;
+    let userToken = localStorage.getItem('token');
 
     const [copy, setCopy] = useState("");
     const [productType, setProductType] = useState("");
     const [audience, setAudience] = useState([]);
     const [gender, setGender] = useState([]);
-    const [result, setResult] = useState([]);
+    // const [result, setResult] = useState([]);
 
     const handleFileChange = (event) => {
         const file = event.target.files[0];
@@ -42,6 +44,44 @@ function Analiz(props) {
           setGender((prevGender) => prevGender.filter((item) => item !== id));
         }
       };
+
+    let result = ["1", "10", "6", "5", "4", "7", "6", "5", "4", "5"];
+    const handleSubmit = () => {
+        const url = `http://localhost:8080/api/analysis`;
+
+        const config = {
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${userToken}`
+              }
+        };
+
+        const payload = {
+            userIdentifier: userIdentifier,
+            copy: copy,
+            productType: productType,
+            audience: audience,
+            gender: gender,
+            result: result
+        };
+
+        axios.post(url, payload, config)
+             .then(response => {
+                console.log("post işlemi başarılı: ", response.data);
+
+                setCopy("");
+                setProductType("");
+                setAudience([]);
+                setGender([]);
+                setSelectedFile(null);
+             })
+             .catch(error => {
+                console.log("Bir hata oluştu: ", error);
+             });
+
+             window.location.reload();
+    
+    }
 
     return (
         <div className='analiz analiz__wrapper section__padding-analiz'>
@@ -122,7 +162,9 @@ function Analiz(props) {
                 </div>
 
                 <div className='analiz__layout-button'>
-                    <button type="submit">Analiz Et</button>
+                    <button type="submit"
+                    onClick={handleSubmit}
+                    >Analiz Et</button>
                 </div>
 
 

@@ -40,7 +40,7 @@ function App() {
     const user = jwtDecode(userToken);
     console.log(user);
     userName = user.sub;
-    userId = user.userId;
+    userId = user.id;
     const userEmail = user.email;
    }
 
@@ -50,8 +50,8 @@ function App() {
       <img src={decore} className='decore' />
        <Navbar username={userName}/> 
       <Header />
-      <About userId={userId}/>
-      <Analiz />
+      <About />
+      <Analiz userId={userId}/>
       <Explore />
       <Footer />
     </div>
