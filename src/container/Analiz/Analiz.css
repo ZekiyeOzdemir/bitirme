@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 4rem;
+    row-gap: 2rem;
 }
 
 .section__padding-analiz {
@@ -47,6 +47,7 @@
     row-gap: 2rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    user-select: none;
 }
 
 
@@ -270,6 +271,27 @@ input[type="checkbox"]:checked:after{
     right: 0;
     z-index: -1;
 }
+
+.analiz__layout-blurred {
+    filter: blur(2px);
+    pointer-events: none; 
+}
+
+.analiz__overlay-message {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-darkestblue);
+    text-align: center;
+}
+
+.analiz__overlay-message__span {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-red);
+}
+
 
 @media screen and (max-width: 2000px) {
     
